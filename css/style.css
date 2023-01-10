@@ -46,6 +46,13 @@ section {
   --dark-gray: #adadad;
   --very-dark-gray: #323232;
   --color-tag: #707070;
+  --spacer-1: 10px;
+  --spacer-2: 15px;
+  --spacer-3: 20px;
+  --spacer-4: 25px;
+  --spacer-5: 30px;
+  --spacer-6: 40px;
+  --spacer-7: 60px;
 }
 
 .container {
@@ -67,7 +74,7 @@ section {
 .header__inner {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 10px;
+  padding: var(--spacer-1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,7 +87,7 @@ section {
 .menu__list {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: var(--spacer-2);
 }
 
 .burger {
@@ -92,7 +99,7 @@ section {
 .bar {
   z-index: 11;
   display: block;
-  width: 25px;
+  width: var(--spacer-4);
   height: 3px;
   margin: 5px auto;
   background-color: #070707;
@@ -127,7 +134,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    gap: var(--spacer-3);
     background-color: var(--gray);
     width: 240px;
     height: 100%;
@@ -149,14 +156,14 @@ section {
 
 .hero {
   display: flex;
-  gap: 40px;
+  gap: var(--spacer-3);
 }
 .hero__header {
   font-size: var(--font-heading);
   margin-bottom: 10px;
 }
 .hero__subtitle {
-  margin-bottom: 20px;
+  margin-bottom: var(--spacer-3);
 }
 .hero__content {
   animation: slideInFromTop 1s ease-in-out;
@@ -164,7 +171,7 @@ section {
 .hero__contacts {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--spacer-1);
 }
 .additional {
   color: var(--dark-gray);
@@ -205,7 +212,7 @@ section {
   position: relative;
   color: var(--dark-gray);
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacer-3);
 }
 .subtitle::after {
   content: "";
@@ -223,7 +230,7 @@ section {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--spacer-1);
   /* animation: slideInFromLeft 1s ease-in-out; */
 }
 
@@ -232,16 +239,16 @@ section {
 }
 .education__level {
   font-size: var(--font-subtitle);
-  margin-bottom: 20px;
+  margin-bottom: var(--spacer-3);
 }
 .education__content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--spacer-3);
 }
 .education__item {
   display: flex;
-  gap: 60px;
+  gap: var(--spacer-7);
 }
 .education__year {
 }
@@ -257,7 +264,7 @@ section {
 @media (max-width: 768px) {
   .education__item {
     flex-direction: column;
-    gap: 20px;
+    gap: var(--spacer-3);
   }
 }
 @media (max-width: 340px) {
@@ -272,11 +279,11 @@ section {
 .skills__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--spacer-3);
 }
 .skills__item {
   display: flex;
-  gap: 60px;
+  gap: var(--spacer-7);
 }
 .skills__info {
   display: flex;
@@ -285,7 +292,7 @@ section {
 }
 .skills__name {
   display: flex;
-  gap: 15px;
+  gap: var(--spacer-2);
   flex-wrap: wrap;
 }
 .skills__name-item {
@@ -300,7 +307,7 @@ section {
 @media (max-width: 768px) {
   .skills__item {
     flex-direction: column;
-    gap: 20px;
+    gap: var(--spacer-3);
   }
 }
 
@@ -309,12 +316,12 @@ section {
 }
 .about__item {
   display: flex;
-  gap: 60px;
+  gap: var(--spacer-7);
 }
 @media (max-width: 768px) {
   .about__item {
     flex-direction: column;
-    gap: 20px;
+    gap: var(--spacer-3);
   }
 }
 
