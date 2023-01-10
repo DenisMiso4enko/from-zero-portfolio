@@ -19,6 +19,25 @@
             <img src="./assets/logo.svg" alt="logo" />
           </a>
         </div>
+        <nav class="header__menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="link" href="#position">Должность</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="link" href="#education">Образование</a>
+            </li>
+            <li class="menu__list-item"><a class="link" href="#skills">Навыки</a></li>
+            <li class="menu__list-item">
+              <a class="link" href="#about">Обо мне</a>
+            </li>
+          </ul>
+          <div class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
       </div>
     </div>
 
@@ -35,14 +54,14 @@
           <p class="hero__subtitle">26 лет, г.Минск, Беларусь</p>
           <div class="hero__contacts">
             <div class="contacts__item">
-              <a class="content__item-link" href="telto:+375298378081"
+              <a class="content__item-link link" href="telto:+375298378081"
                 >+375 (29) 837 80 81</a
               >
               <span class="additional">— предпочитаемый способ связи</span>
             </div>
             <div class="contacts__item">
               <a
-                class="content__item-link"
+                class="content__item-link link"
                 href="mailto:denrrmisochenko17@gmail.com"
                 >denrrmisochenko17@gmail.com</a
               >
@@ -50,53 +69,21 @@
             <div class="contacts__item">
               <span>Другой сайт:</span>
               <a
-                class="content__item-link"
+                class="content__item-link link"
                 href="https://github.com/DenisMiso4enko"
                 >https://github.com/DenisMiso4enko</a
               >
             </div>
           </div>
         </div>
-
-        <!-- <div class="hero__content">
-          <div class="hero__image">
-            <img
-              src="./assets/me.jpg"
-              style="width: 200px"
-              alt="personal-photo"
-            />
-          </div>
-          <div class="hero__contacts">
-            <h1 class="hero__header">
-              Мисоченко Денис <br />
-              Александрович
-            </h1>
-            <p class="hero__subtitle">26 лет, г.Минск, Беларусь</p>
-            <div class="contacts__item">
-              <a href="telto:+375298378081">+375 (29) 837 80 81</a>
-              <span>— предпочитаемый способ связи</span>
-            </div>
-            <div class="contacts__item">
-              <a href="mailto:denrrmisochenko17@gmail.com"
-                >denrrmisochenko17@gmail.com</a
-              >
-            </div>
-            <div class="contacts__item">
-              <span>Другой сайт:</span>
-              <a href="https://github.com/DenisMiso4enko"
-                >https://github.com/DenisMiso4enko</a
-              >
-            </div>
-          </div>
-        </div> -->
       </section>
 
-      <section class="position">
+      <section class="position" id="position">
         <h2 class="position__subtitle subtitle">
           Желаемая должность и зарплата
         </h2>
         <h2 class="position__title title">Frontend-разработчик</h2>
-        <ul class="postion__list">
+        <ul class="position__list">
           <li class="postion__list-item">
             Специализации: — Программист, разработчик
           </li>
@@ -108,7 +95,7 @@
         </ul>
       </section>
 
-      <section class="education">
+      <section class="education" id="education">
         <h2 class="education__subtile subtitle">Образование</h2>
         <p class="education__level">Высшее</p>
         <div class="education__content">
@@ -131,7 +118,7 @@
         </div>
       </section>
 
-      <section class="skills">
+      <section class="skills" id="skills">
         <h2 class="skills__subtitle subtitle">Ключевые навыки</h2>
         <div class="skills__list">
           <div class="skills__item">
@@ -166,7 +153,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <h2 class="about__subtitle subtitle">Дополнительная информация</h2>
         <div class="about__item">
           <div class="about__name tag">Обо мне</div>
